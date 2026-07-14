@@ -3,55 +3,154 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Waliyu</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Contact - Waliyu Faiq</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom Style -->
+    <link rel="stylesheet" href="static/style.css">
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-<section class="contact-section">
-    <div class="contact-title">
-        <h1>Lets Connect!</h1>
-        <p class="tagline">I'm always open to new opportunities, collaborations, or just a friendly chat. Reach out and let's create something amazing together!</p>
-    </div>
-    <div class="contact-container">
-        <div class="contact-card">
-            <div class="contact-item">
-                <i class="fas fa-envelope contact-icon"></i>
-                <a href="mailto:waliyufaiqmuammar@gmail.com" class="contact-link">waliyufaiqmuammar@gmail.com</a>
+
+    <!-- Ambient Glow Effects in Background -->
+    <div class="ambient-glow glow-1"></div>
+    <div class="ambient-glow glow-2"></div>
+    <div class="background-grid"></div>
+
+    <!-- Navigation Header -->
+    <header class="navbar-header">
+        <nav class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <span class="logo-w">W</span>aliyu <span class="logo-f">F</span>aiq
+            </a>
+
+            <!-- Mobile Menu Toggle Button -->
+            <button class="mobile-toggle" aria-label="Toggle menu" id="mobile-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+
+            <!-- Nav Links -->
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html" id="nav-home" class="nav-link"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="about.html" id="nav-about" class="nav-link"><i class="fas fa-user"></i> About</a></li>
+                <li><a href="portfolio.html" id="nav-portfolio" class="nav-link"><i class="fas fa-briefcase"></i> Portfolio</a></li>
+                <li><a href="contact.html" id="nav-contact" class="nav-link"><i class="fas fa-paper-plane"></i> Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Container -->
+    <main class="main-content">
+        <section class="contact-section">
+            <div class="contact-overlay"></div>
+
+            <div class="section-header" style="z-index: 2; position: relative;">
+                <h1>Let's Connect!</h1>
+                <p>I'm always open to new opportunities, collaborations, or discussing projects. Fetch me anytime!</p>
             </div>
+
+            <div class="contact-container">
+                <div class="contact-card">
+                    <!-- Email -->
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <a href="mailto:waliyufaiqmuammar@gmail.com" class="contact-link">waliyufaiqmuammar@gmail.com</a>
+                    </div>
+                    
+                    <!-- LinkedIn -->
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-linkedin-in"></i>
+                        </div>
+                        <a href="https://www.linkedin.com/in/waliyu-faiq-marzuq-mu-ammar/" target="_blank" class="contact-link">Waliyu Faiq Marzuq Mu'ammar</a>
+                    </div>
+
+                    <!-- WhatsApp -->
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <a href="https://wa.link/dnluw3" target="_blank" class="contact-link">0858-9497-0927 (WhatsApp)</a>
+                    </div>
+
+                    <!-- Instagram -->
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                        <a href="https://www.instagram.com/waliyufaiq_/" target="_blank" class="contact-link">waliyufaiq_</a>
+                    </div>
+
+                    <!-- Facebook -->
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-facebook-f"></i>
+                        </div>
+                        <a href="https://www.facebook.com/waliyu.faiq/" target="_blank" class="contact-link">Waliyu Faiq</a>
+                    </div>
+                </div>
+
+                <div class="contact-back">
+                    <a href="index.html" class="secondary-button">
+                        <i class="fas fa-home"></i> Back to Home
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Unified Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2026 Waliyu Faiq. All Rights Reserved. Built with HTML.</p>
+            <div class="footer-socials">
+                <a href="mailto:waliyufaiqmuammar@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+                <a href="https://www.linkedin.com/in/waliyu-faiq-marzuq-mu-ammar/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://wa.link/dnluw3" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://www.instagram.com/waliyufaiq_/" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Core Script -->
+    <script>
+        const mobileToggle = document.getElementById('mobile-toggle');
+        const navLinksElement = document.getElementById('nav-links');
+
+        mobileToggle.addEventListener('click', () => {
+            mobileToggle.classList.toggle('active');
+            navLinksElement.classList.toggle('active');
+        });
+
+        document.addEventListener("DOMContentLoaded", () => {
+            const currentPath = window.location.pathname;
+            const links = {
+                '/index.html': 'nav-home',
+                '/': 'nav-home',
+                '/about.html': 'nav-about',
+                '/portfolio.html': 'nav-portfolio',
+                '/contact.html': 'nav-contact'
+            };
             
-            <div class="contact-item">
-                <i class="fab fa-linkedin-in contact-icon"></i>
-                <a href="https://www.linkedin.com/in/waliyu-faiq-marzuq-mu-ammar/" target="_blank" class="contact-link">Waliyu Faiq Marzuq Mu'ammar</a>
-            </div>
-
-            <div class="contact-item">
-                <i class="fa-brands fa-facebook-f contact-icon"></i>
-                <a href="https://www.facebook.com/waliyu.faiq/" target="_blank" class="contact-link">Waliyu Faiq</a>
-            </div>
-
-            <div class="contact-item">
-                <i class="fa-brands fa-instagram contact-icon"></i>
-                <a href="https://www.instagram.com/waliyufaiq_/" target="_blank" class="contact-link">waliyufaiq_</a>
-            </div>
-
-            <div class="contact-item">
-                <i class="fa-brands fa-whatsapp contact-icon"></i>
-                <a href="https://wa.link/dnluw3" target="_blank" class="contact-link">085894970927</a>
-            </div>
-        </div>
-        <div class="contact-back">
-        <a href="/" class="cta-button">Back to Home</a>
-        </div>
-    </div>
-</section>
+            Object.keys(links).forEach(path => {
+                const elementId = links[path];
+                const el = document.getElementById(elementId);
+                if (el) {
+                    if (currentPath === path || (path !== '/' && currentPath.endsWith(path))) {
+                        el.classList.add('active');
+                    } else {
+                        el.classList.remove('active');
+                    }
+                }
+            });
+        });
+    </script>
 </body>
 </html>

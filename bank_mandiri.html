@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Mandiri - Waliyu Faiq</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom Style -->
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+
+    <!-- Ambient Glow Effects in Background -->
+    <div class="ambient-glow glow-1"></div>
+    <div class="ambient-glow glow-2"></div>
+    <div class="background-grid"></div>
+
+    <!-- Navigation Header -->
+    <header class="navbar-header">
+        <nav class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <span class="logo-w">W</span>aliyu <span class="logo-f">F</span>aiq
+            </a>
+
+            <!-- Mobile Menu Toggle Button -->
+            <button class="mobile-toggle" aria-label="Toggle menu" id="mobile-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+
+            <!-- Nav Links -->
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html" id="nav-home" class="nav-link"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="about.html" id="nav-about" class="nav-link"><i class="fas fa-user"></i> About</a></li>
+                <li><a href="portfolio.html" id="nav-portfolio" class="nav-link"><i class="fas fa-briefcase"></i> Portfolio</a></li>
+                <li><a href="contact.html" id="nav-contact" class="nav-link"><i class="fas fa-paper-plane"></i> Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Container -->
+    <main class="main-content">
+        <div class="project-detail-container">
+            <div class="detail-card">
+                <h1>Cluster Admin - Bank Mandiri</h1>
+                <p style="color: var(--accent-primary); font-weight: 500; font-size: 1.1rem; margin-bottom: 25px;">
+                    <i class="fas fa-building-columns"></i> Banking Operations & Administration
+                </p>
+
+                <div class="detail-content">
+                    <p>
+                        Sebagai Cluster Admin di Bank Mandiri, saya bertanggung jawab atas kelancaran proses administrasi operasional perbankan harian di tingkat cluster demi menjaga efisiensi dan keandalan layanan[cite: 5].
+                    </p>
+                    
+                    <h3 style="color: #ffffff; margin: 30px 0 15px; font-size: 1.3rem; border-left: 3px solid var(--accent-primary); padding-left: 10px;">
+                        Tanggung Jawab & Kontribusi Utama:
+                    </h3>
+                    <ul style="margin-left: 20px; margin-bottom: 25px; list-style-type: square; color: var(--text-secondary);">
+                        <li style="margin-bottom: 10px;">Mengelola administrasi harian dan dokumentasi transaksi operasional cluster[cite: 5].</li>
+                        <li style="margin-bottom: 10px;">Melakukan verifikasi booking data keuangan dan berkas administrasi secara akurat[cite: 5].</li>
+                        <li style="margin-bottom: 10px;">Menyusun laporan komprehensif berkala untuk memonitor perkembangan operasional kerja[cite: 5].</li>
+                        <li style="margin-bottom: 10px;">Memastikan kepatuhan administrasi terhadap standar prosedur operasional bank.</li>
+                    </ul>
+
+                    <h3 style="color: #ffffff; margin: 30px 0 15px; font-size: 1.3rem; border-left: 3px solid var(--accent-primary); padding-left: 10px;">
+                        Keahlian & Kompetensi Yang Diterapkan:
+                    </h3>
+                    <div class="skills-grid" style="margin-top: 15px; margin-bottom: 25px;">
+                        <span class="skill-badge"><i class="fas fa-file-invoice"></i> Banking Administration[cite: 5]</span>
+                        <span class="skill-badge"><i class="fas fa-clipboard-check"></i> Verification Booking[cite: 5]</span>
+                        <span class="skill-badge"><i class="fas fa-chart-line"></i> Operational Reporting[cite: 5]</span>
+                        <span class="skill-badge"><i class="fas fa-shield-halved"></i> Compliance & Risk Mitigation</span>
+                    </div>
+                </div>
+
+                <div class="detail-back">
+                    <a href="portfolio.html" class="cta-button">
+                        <i class="fas fa-arrow-left"></i> Back to Portfolio
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Unified Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2026 Waliyu Faiq. All Rights Reserved. Built with HTML.</p>
+            <div class="footer-socials">
+                <a href="mailto:waliyufaiqmuammar@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+                <a href="https://www.linkedin.com/in/waliyu-faiq-marzuq-mu-ammar/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://wa.link/dnluw3" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://www.instagram.com/waliyufaiq_/" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Core Script -->
+    <script>
+        const mobileToggle = document.getElementById('mobile-toggle');
+        const navLinksElement = document.getElementById('nav-links');
+
+        mobileToggle.addEventListener('click', () => {
+            mobileToggle.classList.toggle('active');
+            navLinksElement.classList.toggle('active');
+        });
+
+        document.addEventListener("DOMContentLoaded", () => {
+            const currentPath = window.location.pathname;
+            const links = {
+                '/index.html': 'nav-home',
+                '/': 'nav-home',
+                '/about.html': 'nav-about',
+                '/portfolio.html': 'nav-portfolio',
+                '/contact.html': 'nav-contact'
+            };
+            
+            Object.keys(links).forEach(path => {
+                const elementId = links[path];
+                const el = document.getElementById(elementId);
+                if (el) {
+                    if (currentPath === path || (path !== '/' && currentPath.endsWith(path))) {
+                        el.classList.add('active');
+                    } else {
+                        el.classList.remove('active');
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>

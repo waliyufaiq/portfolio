@@ -3,35 +3,144 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Waliyu</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>About Me - Waliyu Faiq</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom Style -->
+    <link rel="stylesheet" href="static/style.css">
 </head>
-
 <body>
-<nav>
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="portfolio.html">Portfolio</a></li>
-        <li><a href="contact.html">Contact</a></li>
-    </ul>
-</nav>
 
-<section class="about-section">
-    <h1>About Me</h1>
-    <div class="about-content">
-        <img src="Waliyu1.jpg" alt="Waliyu's Photo">
-        <div class="intro">
-            <p>Hi! I'm Waliyu Faiq Marzuq Mu'ammar</p>
+    <!-- Ambient Glow Effects in Background -->
+    <div class="ambient-glow glow-1"></div>
+    <div class="ambient-glow glow-2"></div>
+    <div class="background-grid"></div>
+
+    <!-- Navigation Header -->
+    <header class="navbar-header">
+        <nav class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <span class="logo-w">W</span>aliyu <span class="logo-f">F</span>aiq
+            </a>
+
+            <!-- Mobile Menu Toggle Button -->
+            <button class="mobile-toggle" aria-label="Toggle menu" id="mobile-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+
+            <!-- Nav Links -->
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html" id="nav-home" class="nav-link"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="about.html" id="nav-about" class="nav-link"><i class="fas fa-user"></i> About</a></li>
+                <li><a href="portfolio.html" id="nav-portfolio" class="nav-link"><i class="fas fa-briefcase"></i> Portfolio</a></li>
+                <li><a href="contact.html" id="nav-contact" class="nav-link"><i class="fas fa-paper-plane"></i> Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Container -->
+    <main class="main-content">
+        <section class="about-section">
+            <div class="section-header">
+                <h1>About Me</h1>
+                <p>A glimpse into my background, skills, and professional journey.</p>
+            </div>
+
+            <div class="about-content">
+                <!-- Floating Profile Image -->
+                <div class="image-container">
+                    <img src="static/Waliyu1.jpg" alt="Waliyu Faiq">
+                </div>
+
+                <!-- Biography and Skills -->
+                <div class="bio-card">
+                    <h2>Hi! I'm Waliyu Faiq Marzuq Mu'ammar</h2>
+                    <p>
+                        Detail-oriented Marine Science graduate specializing in Marine Engineering with a solid technical background in oceanographic data analysis, hydrographic surveys, and spatial modeling. Proficient in tools such as ArcGIS, MIKE ZERO, and Global Mapper, with hands-on experience through internships at PUSHIDROSAL and the Marine and Fisheries Office.
+                    </p>
+                    <p>
+                        Completed a certified LiDAR Mapping course from GIM Learning Club to deepen geospatial capabilities, and actively expanding HSE competencies through the INDOSHE Fresh Graduate Work and Learn Program. Served as a Teaching Assistant for Marine Instrumentation and GIS, mentoring students in field and software applications. Proven safety leadership, safety behavior, teamwork, and project coordination skills demonstrated through research, academic assistance, organizational roles on campus, and certification programs.
+                    </p>
+
+                    <!-- Interactive Skills Badge Section -->
+                    <div class="skills-container">
+                        <h3>Technical & Core Competencies</h3>
+                        <div class="skills-grid">
+                            <span class="skill-badge"><i class="fas fa-building-columns"></i> Bank Operation</span>
+                            <span class="skill-badge"><i class="fas fa-file-invoice"></i> Administration & Reporting</span>
+                            <span class="skill-badge"><i class="fas fa-water"></i> Oceanographic Analysis</span>
+                            <span class="skill-badge"><i class="fas fa-anchor"></i> Marine Engineering</span>
+                            <span class="skill-badge"><i class="fas fa-map-marked-alt"></i> GIS (ArcGIS / QGIS)</span>
+                            <span class="skill-badge"><i class="fas fa-cube"></i> MIKE 21 Modeling</span>
+                            <span class="skill-badge"><i class="fas fa-globe"></i> Global Mapper</span>
+                            <span class="skill-badge"><i class="fas fa-satellite"></i> LiDAR Mapping</span>
+                            <span class="skill-badge"><i class="fas fa-shield-halved"></i> Mining HSE Safety</span>
+                            <span class="skill-badge"><i class="fas fa-chalkboard-user"></i> Academic Mentoring</span>
+                            <span class="skill-badge"><i class="fas fa-people-group"></i> Project Coordination</span>
+                        </div>
+                    </div>
+
+                    <div style="margin-top: 35px;">
+                        <a href="contact.html" class="cta-button">
+                            <i class="fas fa-paper-plane"></i> Get in Touch
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Unified Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2026 Waliyu Faiq. All Rights Reserved. Built with HTML.</p>
+            <div class="footer-socials">
+                <a href="mailto:waliyufaiqmuammar@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+                <a href="https://www.linkedin.com/in/waliyu-faiq-marzuq-mu-ammar/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://wa.link/dnluw3" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://www.instagram.com/waliyufaiq_/" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
         </div>
-        <div class="bio-text">
-            <p>
-                Detail-oriented Marine Science graduate specializing in Marine Engineering with a solid technical background in oceanographic data analysis, hydrographic surveys, and spatial modeling. Proficient in tools such as ArcGIS, MIKE ZERO, and Global Mapper, with hands-on experience through internships at PUSHIDROSAL and the Marine and Fisheries Office. Completed a certified LiDAR Mapping course from GIM Learning Club to deepen geospatial capabilities, and actively expanding HSE competencies through the INDOSHE Fresh Graduate Work and Learn Program. Served as a Teaching Assistant for Marine Instrumentation and GIS, mentoring students in field and software applications. Proven safety leadership, safety behavior, teamwork, and project coordination skills demonstrated through research, academic assistance, organizational roles on campus and certification program.
-            </p>
-        </div>
-        <a href="/contact" class="cta-button">Get in Touch</a>
-    </div>
-</section>
+    </footer>
+
+    <!-- Core Script -->
+    <script>
+        const mobileToggle = document.getElementById('mobile-toggle');
+        const navLinksElement = document.getElementById('nav-links');
+
+        mobileToggle.addEventListener('click', () => {
+            mobileToggle.classList.toggle('active');
+            navLinksElement.classList.toggle('active');
+        });
+
+        document.addEventListener("DOMContentLoaded", () => {
+            const currentPath = window.location.pathname;
+            const links = {
+                '/index.html': 'nav-home',
+                '/': 'nav-home',
+                '/about.html': 'nav-about',
+                '/portfolio.html': 'nav-portfolio',
+                '/contact.html': 'nav-contact'
+            };
+            
+            Object.keys(links).forEach(path => {
+                const elementId = links[path];
+                const el = document.getElementById(elementId);
+                if (el) {
+                    if (currentPath === path || (path !== '/' && currentPath.endsWith(path))) {
+                        el.classList.add('active');
+                    } else {
+                        el.classList.remove('active');
+                    }
+                }
+            });
+        });
+    </script>
 </body>
 </html>

@@ -3,75 +3,314 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio Waliyu</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Portfolio - Waliyu Faiq</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom Style -->
+    <link rel="stylesheet" href="static/style.css">
 </head>
 <body>
 
-<nav>
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="portfolio.html">Portfolio</a></li>
-        <li><a href="contact.html">Contact</a></li>
-    </ul>
-</nav>
+    <!-- Ambient Glow Effects in Background -->
+    <div class="ambient-glow glow-1"></div>
+    <div class="ambient-glow glow-2"></div>
+    <div class="background-grid"></div>
 
-<section class="portfolio-section">
-    <h1>My Projects</h1>
-    <div class="portfolio-container">
+    <!-- Navigation Header -->
+    <header class="navbar-header">
+        <nav class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <span class="logo-w">W</span>aliyu <span class="logo-f">F</span>aiq
+            </a>
 
-        <a href="pushidrosal.html">
-            <div class="card">
-                <img src="Pushidrosal.png" alt="Pushidrosal Internship">
-                <h2>PUSHIDROSAL Internship</h2>
-                <p>Hydrographic survey & marine mapping assistant during field assignment.</p>
+            <!-- Mobile Menu Toggle Button -->
+            <button class="mobile-toggle" aria-label="Toggle menu" id="mobile-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+
+            <!-- Nav Links -->
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html" id="nav-home" class="nav-link"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="about.html" id="nav-about" class="nav-link"><i class="fas fa-user"></i> About</a></li>
+                <li><a href="portfolio.html" id="nav-portfolio" class="nav-link"><i class="fas fa-briefcase"></i> Portfolio</a></li>
+                <li><a href="contact.html" id="nav-contact" class="nav-link"><i class="fas fa-paper-plane"></i> Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Container -->
+    <main class="main-content">
+        <section class="portfolio-section">
+            <div class="section-header">
+                <h1>My Work & Experience</h1>
+                <p>A compilation of my academic projects, certifications, and professional career milestones.</p>
             </div>
-        </a>
 
-        <div class="card">
-            <img src="mike-21.png" alt="MIKE 21 Modeling">
-            <h2>MIKE 21 Oceanographic Modeling</h2>
-            <p>Hydrodynamic simulation of coastal tides using MIKE 21 software.</p>
+            <!-- Category Filters -->
+            <div class="portfolio-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="banking">Bank Operation</button>
+                <button class="filter-btn" data-filter="marine-gis">Marine Science & GIS</button>
+                <button class="filter-btn" data-filter="professional">Professional Experience</button>
+                <button class="filter-btn" data-filter="certifications">Certifications</button>
+            </div>
+
+            <!-- Portfolio Grid -->
+            <div class="portfolio-container" id="portfolio-container">
+
+                <!-- 1. BANK MANDIRI -->
+                <div class="portfolio-item" data-category="banking">
+                    <a href="bank_mandiri.html" class="card-wrapper" style="display: block; width: 100%; height: 100%; text-decoration: none; position: relative; z-index: 10;">
+                        <div class="card mandiri-card">
+                            <span class="present-badge" style="pointer-events: none;">Present</span>
+                            <div class="card-image-box">
+                                <img src="static/bank_mandiri.png" alt="Bank Mandiri">
+                            </div>
+                            <div class="card-tags">
+                                <span class="card-tag">Banking</span>
+                                <span class="card-tag">Operations</span>
+                            </div>
+                            <h2>Cluster Admin</h2>
+                            <p>
+                                Currently working at Bank Mandiri as a Cluster Admin. Key duties include managing daily
+                                administration, documentation, verification booking, and comprehensive reporting. (Click to view details)
+                            </p>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- 2. Supervisor Marketing -->
+                <div class="portfolio-item" data-category="professional">
+                    <a href="supervisor_marketing.html" class="card-wrapper" style="display: block; width: 100%; height: 100%; text-decoration: none; position: relative; z-index: 10;">
+                        <div class="card">
+                            <div class="card-image-box">
+                                <img src="static/nss.png" alt="Supervisor Marketing">
+                            </div>
+                            <div class="card-tags">
+                                <span class="card-tag">Marketing</span>
+                                <span class="card-tag">Management</span>
+                            </div>
+                            <h2>Supervisor Marketing</h2>
+                            <p>Managed marketing efforts in Cilacap, leading a team of motorcycle sales agents and compiling monthly reports. (Click to view details)</p>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- 3. Mining HSE Certification -->
+                <div class="portfolio-item" data-category="certifications">
+                    <a href="mining_hse.html" class="card-wrapper" style="display: block; width: 100%; height: 100%; text-decoration: none; position: relative; z-index: 10;">
+                        <div class="card">
+                            <div class="card-image-box">
+                                <img src="static/indoshe.png" alt="Mining HSE">
+                            </div>
+                            <div class="card-tags">
+                                <span class="card-tag">HSE Safety</span>
+                                <span class="card-tag">Certification</span>
+                            </div>
+                            <h2>Mining HSE Certification</h2>
+                            <p>Fresh Graduate Work and Learn Program specializing in Mining Health, Safety, and Environment. (Click to view details)</p>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- 4. Research and Analysis Staff -->
+                <div class="portfolio-item" data-category="professional">
+                    <a href="research_analysis.html" class="card-wrapper" style="display: block; width: 100%; height: 100%; text-decoration: none; position: relative; z-index: 10;">
+                        <div class="card">
+                            <div class="card-image-box">
+                                <img src="static/nrs.png" alt="Research Staff">
+                            </div>
+                            <div class="card-tags">
+                                <span class="card-tag">Analysis</span>
+                                <span class="card-tag">Sociology</span>
+                            </div>
+                            <h2>Research & Analysis Staff</h2>
+                            <p>Performed surveys, data extraction, and deep analysis on political, social, and economic topics for research projects. (Click to view details)</p>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- 5. LiDAR Training Certification -->
+                <div class="portfolio-item" data-category="certifications">
+                    <a href="lidar_training.html" class="card-wrapper" style="display: block; width: 100%; height: 100%; text-decoration: none; position: relative; z-index: 10;">
+                        <div class="card">
+                            <div class="card-image-box">
+                                <img src="static/GIM.png" alt="LiDAR Training">
+                            </div>
+                            <div class="card-tags">
+                                <span class="card-tag">LiDAR</span>
+                                <span class="card-tag">Certification</span>
+                            </div>
+                            <h2>LiDAR Training Certification</h2>
+                            <p>Basic LiDAR Mapping: LiDAR Introduction, Data Processing, Acquisition, and Real Applications. (Click to view details)</p>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- 6. Phytoplankton Detection with YOLO -->
+                <div class="portfolio-item" data-category="marine-gis">
+                    <a href="phytoplankton_yolo.html" class="card-wrapper" style="display: block; width: 100%; height: 100%; text-decoration: none; position: relative; z-index: 10;">
+                        <div class="card">
+                            <div class="card-image-box">
+                                <img src="static/yolov5.png" alt="YOLO AI Project">
+                            </div>
+                            <div class="card-tags">
+                                <span class="card-tag">Computer Vision</span>
+                                <span class="card-tag">AI / YOLOv5</span>
+                            </div>
+                            <h2>Phytoplankton Detection with YOLO</h2>
+                            <p>Built and trained an artificial intelligence model to automatically detect and classify phytoplankton species from microscopic imagery. (Click to view details)</p>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- 7. PUSHIDROSAL Internship -->
+                <div class="portfolio-item" data-category="marine-gis">
+                    <a href="pushidrosal.html" class="card-wrapper" style="display: block; width: 100%; height: 100%; text-decoration: none; position: relative; z-index: 10;">
+                        <div class="card">
+                            <div class="card-image-box">
+                                <img src="static/Pushidrosal.png" alt="Pushidrosal Internship">
+                            </div>
+                            <div class="card-tags">
+                                <span class="card-tag">Internship</span>
+                                <span class="card-tag">Hydrographic</span>
+                            </div>
+                            <h2>PUSHIDROSAL Internship</h2>
+                            <p>Hydrographic survey and marine mapping assistant during field assignment. (Click to view details)</p>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- 8. MIKE 21 -->
+                <div class="portfolio-item" data-category="marine-gis">
+                    <a href="mike_21.html" class="card-wrapper" style="display: block; width: 100%; height: 100%; text-decoration: none; position: relative; z-index: 10;">
+                        <div class="card">
+                            <div class="card-image-box">
+                                <img src="static/mike-21.png" alt="MIKE 21 Modeling">
+                            </div>
+                            <div class="card-tags">
+                                <span class="card-tag">Modeling</span>
+                                <span class="card-tag">Coastal Dynamics</span>
+                            </div>
+                            <h2>MIKE 21 Oceanographic Modeling</h2>
+                            <p>Hydrodynamic simulation of coastal tides and sediment transport using specialized MIKE 21 software. (Click to view details)</p>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- 9. GIS Teaching Assistant -->
+                <div class="portfolio-item" data-category="marine-gis">
+                    <a href="gis_assistant.html" class="card-wrapper" style="display: block; width: 100%; height: 100%; text-decoration: none; position: relative; z-index: 10;">
+                        <div class="card">
+                            <div class="card-image-box">
+                                <img src="static/ArcGIS.png" alt="GIS Teaching Assistant">
+                            </div>
+                            <div class="card-tags">
+                                <span class="card-tag">GIS</span>
+                                <span class="card-tag">Academic</span>
+                            </div>
+                            <h2>GIS Teaching Assistant</h2>
+                            <p>Mentored university students in spatial data analysis, map compiling, and tools such as ArcGIS and QGIS. (Click to view details)</p>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Unified Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2026 Waliyu Faiq. All Rights Reserved. Built with HTML.</p>
+            <div class="footer-socials">
+                <a href="mailto:waliyufaiqmuammar@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+                <a href="https://www.linkedin.com/in/waliyu-faiq-marzuq-mu-ammar/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://wa.link/dnluw3" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://www.instagram.com/waliyufaiq_/" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
         </div>
+    </footer>
 
-        <div class="card">
-            <img src="yolov5.png" alt="YOLO AI Project">
-            <h2>Phytoplankton Detection with YOLO</h2>
-            <p>Built an AI model to detect phytoplankton species from microscopic imagery.</p>
-        </div>
+    <!-- Core Script -->
+    <script>
+        const mobileToggle = document.getElementById('mobile-toggle');
+        const navLinksElement = document.getElementById('nav-links');
 
-        <div class="card">
-            <img src="ArcGIS.png" alt="GIS Teaching Assistant">
-            <h2>GIS Teaching Assistant</h2>
-            <p>Helped students learn spatial data analysis with ArcGIS and QGIS tools.</p>
-        </div>
+        mobileToggle.addEventListener('click', () => {
+            mobileToggle.classList.toggle('active');
+            navLinksElement.classList.toggle('active');
+        });
 
-        <div class="card">
-            <img src="nrs.png" alt="Research and Analysis Staff">
-            <h2>Research and Analysis Staff</h2>
-            <p>Performed surveys on political, social, and economic issues for Research</p>
-        </div>
+        document.addEventListener("DOMContentLoaded", () => {
+            const currentPath = window.location.pathname;
+            const links = {
+                '/index.html': 'nav-home',
+                '/': 'nav-home',
+                '/about.html': 'nav-about',
+                '/portfolio.html': 'nav-portfolio',
+                '/contact.html': 'nav-contact'
+            };
+            
+            Object.keys(links).forEach(path => {
+                const elementId = links[path];
+                const el = document.getElementById(elementId);
+                if (el) {
+                    if (currentPath === path || (path !== '/' && currentPath.endsWith(path))) {
+                        el.classList.add('active');
+                    } else {
+                        el.classList.remove('active');
+                    }
+                }
+            });
+        });
 
-        <div class="card">
-            <img src="GIM.png" alt="LiDAR Training Certification">
-            <h2>LiDAR Training Certification</h2>
-            <p>Basic LiDAR Mapping: LiDAR Introduction, Data Processing Acquisition and Real Applications</p>
-        </div>
+        // Filter Portfolio
+        const filterButtons = document.querySelectorAll(".filter-btn");
+        const portfolioItems = document.querySelectorAll(".portfolio-item");
 
-        <div class="card">
-            <img src="indoshe.png" alt="Mining HSE Certification">
-            <h2>Mining HSE Certification</h2>
-            <p>Fresh Graduate Work and Learn Program</p>
-        </div>        
+        filterButtons.forEach(button => {
+            button.addEventListener("click", () => {
+                filterButtons.forEach(btn => btn.classList.remove("active"));
+                button.classList.add("active");
 
-        <div class="card">
-            <img src="nss.png" alt="Supervisor Marketing">
-            <h2>Supervisor Marketing</h2>
-            <p>Managed the Cilacap area with a primary focus on motorcycle sales agents</p>
-        </div>        
-    </div>
-</section>
+                const filterValue = button.getAttribute("data-filter");
 
+                portfolioItems.forEach(item => {
+                    const itemCategory = item.getAttribute("data-category");
+
+                    if (filterValue === "all" || itemCategory === filterValue) {
+                        item.classList.remove("hidden");
+                    } else {
+                        item.classList.add("hidden");
+                    }
+                });
+
+                const section = document.querySelector(".portfolio-section");
+                if (section) {
+                    section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+
+        // 3D Card tilt dynamic shadow effect
+        const cards = document.querySelectorAll('.card');
+        cards.forEach(card => {
+            card.addEventListener('mousemove', e => {
+                const rect = card.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+
+                card.style.setProperty('--mouse-x', `${x}px`);
+                card.style.setProperty('--mouse-y', `${y}px`);
+            });
+        });
+    </script>
 </body>
 </html>
